@@ -1,3 +1,66 @@
+.header {
+  width: 100%;
+  background-color: #fff;;
+  &__content {
+    margin: 0 auto;
+    max-width: $desktop-width;
+    padding: 1.2rem 0;
+    @include flex(flex, space-between, center);
+    .logo {
+      @include flex(flex, space-between, center);
+      flex-direction: column;
+      width: 15%;
+      text-decoration: none;
+      letter-spacing: 0.1rem;
+      &__img {
+        @include width-height(5rem);
+        margin-bottom: 0.3rem;
+      }
+      &__text {
+        @extend %font-primary;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1rem;
+        text-transform: uppercase;
+        line-height: 1.2rem;
+        color: $color-font;
+      }
+    }
+    .navigation {
+      width: 65%;
+      &__list {
+        @include flex(flex, space-between, center);
+        list-style-type: none;
+      }
+      &__link {
+        text-decoration: none;
+        @extend %font-additional;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08rem;
+        font-weight: normal;
+        color: $color-font;
+      }
+    }
+
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // .header {
 //   flex-shrink: 0;
 //   @include width-height(100%, 50rem);

@@ -1,24 +1,30 @@
 // @import '../../node_modules/normalize.css/normalize.css';
+// @import '~normalize.css';
 
 // // Abstracts
-// @import './abstracts/fonts';
-// @import './abstracts/constants';
-// @import './abstracts/placeholders';
-// @import './abstracts/mixins';
+@import './abstracts/fonts';
+@import './abstracts/constants';
+@import './abstracts/placeholders';
+@import './abstracts/mixins';
 
-// // Base
-// @import './base/base';
+// Base
+@import './base/base';
 // @import './base/animated';
 
-// // Components
-// @import './components/greeting';
-// @import './components/how-to-play';
-// @import './components/settings';
-// @import './components/description';
-// @import './components/select-level';
-// @import './components/error';
+// Components
+@import './components/welcome';
+@import './components/course';
+@import './components/description';
+@import './components/cells';
+@import './components/about';
+@import './components/parallax';
+@import './components/gallery';
+@import './components/questions';
+@import './components/testimonials';
+@import './components/certificates';
+@import './components/contacts';
 
-// // Layouts
-// @import './layouts/header';
-// @import './layouts/main';
-// @import './layouts/canvas';
+// Layouts
+@import './layouts/header';
+@import './layouts/main';
+@import './layouts/footer';

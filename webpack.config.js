@@ -15,8 +15,6 @@ module.exports = (env, options) => {
       path: path.join(__dirname, '/dist'),
       assetModuleFilename: '[hash][ext]'
     },
-
-
     devServer: {
       historyApiFallback: true,
       static: {
@@ -28,9 +26,6 @@ module.exports = (env, options) => {
       port: 3000,
       historyApiFallback: true,
   },
-
-
-
     mode: isProduction ? 'production' : 'development',
     devtool: /* isProduction ? 'none' :  */'source-map', // BREAKING CHANGE since webpack 5: The devtool option is more strict.
     watch: !isProduction,

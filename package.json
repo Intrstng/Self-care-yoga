@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "css-loader": "^6.8.1",
+    "normalize.css": "^8.0.1",
     "style-loader": "^3.3.3"
   }
 }

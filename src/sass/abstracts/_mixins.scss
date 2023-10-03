@@ -1,13 +1,13 @@
-// @mixin flex($display, $justify-content: none, $align-items: none) {
-//   display: $display;
-//   justify-content: $justify-content;
-//   align-items: $align-items;
-// }
+@mixin flex($display, $justify-content: none, $align-items: none) {
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
 
-// @mixin width-height($width, $height: $width) {
-//   width: $width;
-//   height: $height;
-// }
+@mixin width-height($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
 
 // @mixin top-left($top: none, $left: $top) {
 //   top: $top;
