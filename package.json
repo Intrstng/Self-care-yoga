@@ -1,0 +1,14 @@
+{
+  "name": "self-care-yoga",
+  "version": "1.0.0",
+  "description": "yoga_landing_page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yoga"
+  ],
+  "author": "Andrei Babich",
+  "license": "ISC"
+}
