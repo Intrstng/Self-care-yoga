@@ -91,3 +91,120 @@
 //     }
 //   }
 // }
+
+
+// .welcome {
+//   width: 100vw;
+// }
+
+.slider {
+  position: relative;
+  //max-width: 100%;
+  //height: 90vh;
+  overflow: hidden;
+}
+.slider__line {
+  background-color: $color-dark-bg;
+  display: flex;
+  align-items: center;
+  transition: all 1s;
+  width: 7680px;
+}
+.slider__img1,
+.slider__img2,
+.slider__img3,
+.slider__img4 {
+  width: 1920px;
+  //height: 100vh;
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-content: center;
+  text-align: center;
+  padding: 0 5px;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-family: "RalewayRegular-grid", sans-serif;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.4s ease;
+  cursor: pointer; 
+}
+.slider__img1 {
+  background-image: url('/src/img/slider/1.jpg');
+}
+.slider__img2 {
+  background-image: url('/src/img/slider/2.jpg');
+}
+.slider__img3 {
+  background-image: url('/src/img/slider/3.jpg');
+}
+.slider__img4 {
+  background-image: url('/src/img/slider/4.jpg');
+}
+
+
+
+.slider__btn-prev {
+  position: absolute;
+  left: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  transition: all 0.25s ease;
+}
+// .slider__btn-prev_hover:hover {
+//   opacity: 0.8;
+//   transform: scale(1.05);
+// }
+
+.slider__btn-img {
+}
+.slider__btn-prev_hover:hover,
+.slider__btn-next_hover:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.slider__btn-next {
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+}
+// .slider__btn-next_hover:hover {
+//   opacity: 0.8;
+//   transform: scale(1.05);
+// }
+
+.slider__wrapper {
+  width: 8rem;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slider__dot {
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid $color-pagination-dark;
+  border-radius: 50%;
+}
+.slider__dot:hover {
+  background-color: $color-pagination-light;
+  cursor: pointer;
+}
+.slider__dot_active {
+  background-color: $color-pagination-light;
+}
+.slider__btn-next img, .slider__btn-prev img {
+  width: 4.5rem;
+  height: 4.5rem;
+}
