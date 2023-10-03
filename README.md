@@ -1,3 +1,3 @@
-Self Care yoga
+Self-care yoga
 
 Personal trainer Alexandra Pilipovich
