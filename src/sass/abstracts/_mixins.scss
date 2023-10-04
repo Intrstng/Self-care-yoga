@@ -9,15 +9,15 @@
   height: $height;
 }
 
-// @mixin top-left($top: none, $left: $top) {
-//   top: $top;
-//   left: $left;
-// }
+@mixin top-left($top: none, $left: $top) {
+  top: $top;
+  left: $left;
+}
 
-// @mixin top-right($top: none, $right: $top) {
-//   top: $top;
-//   right: $right;
-// }
+@mixin top-right($top: none, $right: $top) {
+  top: $top;
+  right: $right;
+}
 
 // @mixin background-img($imgpath) {
 //   background-image: url($path-assets + $imgpath);
@@ -29,6 +29,13 @@
 //   }
 //   #{$property}: $value;
 // }
+@mixin media-highres-desktop {
+  @media (min-width: $desktop-highres-width) { @content; }
+}
+
+@mixin media-max-desktop {
+  @media (max-width: $desktop-max-width) { @content; }
+}
 
 // @mixin media-desktop {
 //   @media (max-width: $desktop-width) { @content; }

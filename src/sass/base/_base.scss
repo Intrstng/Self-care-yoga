@@ -7,12 +7,16 @@
 }
 
 html {
-  //@extend %font-primary;
+  @extend %font-standart;
+  //max-width: $desktop-max-width;
   font-size: 62.5%;
 }
 
 body {
+  margin: 0 auto;
+
   color: $color-black;
+  //max-width: $desktop-max-width;
 //   position: relative;
 //   height: 100vh;
 //   font-size: 1.4rem;
