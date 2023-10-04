@@ -8,24 +8,21 @@
     background-color: $color-dark-bg;
     @include flex(flex, space-between, center);
     transition: all 1s;
-    width: 7680px;
+    width: calc(100vw * 4); // For four slides
   }
   &__img1,
   &__img2,
   &__img3,
   &__img4 {
-    @include width-height(100vw, 90vh);
+    @include width-height(100%, 90vh);
+    padding: 3rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     align-content: center;
     text-align: center;
-    padding: 0 0.5rem;
-    font-family: "RalewayRegular-grid", sans-serif;
-    font-weight: bold;
     position: relative;
     transition: color 0.4s ease;
-    cursor: pointer; 
   }
   &__img1 {
     background-image: url('/src/img/slider/1.jpg');
@@ -42,7 +39,7 @@
   &__title {
     @extend %font-title;
     text-align: left;
-    margin: 16rem 0 7rem 15rem;
+    margin: 16rem 0 7rem 13rem;
     color: $color-light;
     letter-spacing: 0.07rem;
     font-size: 4rem;
@@ -51,7 +48,7 @@
   &__subtitle {
     @extend %font-primary;
     text-align: left;
-    margin: 0 0 23rem 18rem;
+    margin: 0 0 23rem 15rem;
     color: $color-dark-bg;
     letter-spacing: 0.03rem;
     font-size: 3rem;
@@ -118,7 +115,7 @@
     }
   }
   .slide1 {
-    margin-left: 95rem;
+    margin-left: 94rem;
   }
   .slide2 {
     text-align: left;
@@ -136,12 +133,42 @@
     margin-top: 68rem;
     font-size: 2.3rem;
   }
+  .social {
+    @include width-height(9.7rem);
+    position: absolute;
+    @include top-right(85%, 10%);
+    @include flex(flex, space-between, center);
+    &__link {
+      text-decoration: none;
+    }
+    &__img {
+      @include width-height(4.5rem);
+      opacity: 0.8;
+      transition: 0.25s all ease;
+      &_hover:hover {
+        transform: scale(1.07);
+        opacity: 1;
+      }
+    }
+  }
 }
 
-                                                            
 
-
-
+@include media-small-desktop {
+  .slider {
+    &__btn-next img,
+    &__btn-prev img {
+     width: calc(20px + (50 - 20) * ((100vw - 320px) / (850 - 320)));
+    }
+    &__dot {
+      width: calc(10px +(16 - 20) * ((100vw - 320px) / (850 -320)));
+      height: calc(10px +(16 - 20) * ((100vw - 320px) / (850 -320)));
+    }
+    &__wrapper {
+      column-gap: calc(5px + (10 - 5) * ((100vw - 320px) / (850 - 320)));
+    }
+  }
+}
 
 
 
@@ -171,19 +198,3 @@
                                                             //     overflow: hidden;
 
                                                             //   }
-
-
-.slider__title {
-}
-.slider__subtitle {
-}
-.slider__text {
-}
-.slider__img {
-}
-.slider__img2 {
-}
-.slider__img3 {
-}
-.slider__img4 {
-}

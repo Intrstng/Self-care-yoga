@@ -1,0 +1,38 @@
+.center {
+  @include width-height(18rem, 6rem);
+  @include top-left(59rem, 18rem);
+  position: absolute;
+  .btn {
+    @include width-height(18rem, 6rem);
+    @include flex(flex, center, center);
+    text-decoration: none;
+    cursor: pointer;
+    background: $color-btn-bg;
+    border: 1px solid $color-btn-border;
+    outline: none;
+    transition: 1s ease-in-out;
+    span {
+      color: $color-light;
+      text-transform: uppercase;
+      letter-spacing: 0.03rem;
+      font-size: 1.6rem;
+      font-weight: 100;
+    }
+    &_hover:hover {
+      transition: 1s ease-in-out;
+      background: $color-btn-hover;
+    }
+    &_hover:hover svg {
+      stroke-dashoffset: -480;
+    }
+  }
+  svg {
+    position: absolute;
+    @include top-left(0);
+    fill: none;
+    stroke: $color-light;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+}

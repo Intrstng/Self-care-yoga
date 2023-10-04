@@ -3,6 +3,11 @@ $color-black: rgb(0, 0, 0);
 $color-light-bg: rgb(241, 241, 241);
 $color-dark-bg: rgba(82, 82, 82, 0.8);
 $color-font-light: rgba(255, 255, 255, 0.8);
+$color-btn-bg: rgb(112, 157, 230);
+$color-btn-border: rgb(145, 201, 255);
+$color-btn-hover: rgb(112, 157, 230);
+
+
 // $color-disabled: rgba(255, 255, 255, 0.4);
 // $color-span: rgb(8, 87, 161);
 $color-font: rgba(59, 61, 66, 0.9);
@@ -26,6 +31,6 @@ $color-pagination-dark: rgb(82, 67, 54);
 $desktop-highres-width: 1921px;
 $desktop-max-width: 1920px;
 $desktop-width: 1440px;
-// $small-desktop-width: 1140px;
+$small-desktop-width: 850px;
 // $tablet-width: 640px;
 // $mobile-width: 390px;
