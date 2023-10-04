@@ -10,6 +10,7 @@ html {
   @extend %font-standart;
   //max-width: $desktop-max-width;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -29,6 +30,11 @@ body {
 //   background-repeat: no-repeat;
 //   background-size: cover;
 //   overflow: hidden;
+}
+
+.info {
+  background-color: $color-light-bg;
+  background-image: url('/src/img/bg/bg-vector.png');
 }
 
 // .hidden {

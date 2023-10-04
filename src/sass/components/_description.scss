@@ -1,0 +1,105 @@
+.description {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  &__content {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 4.5rem 0 4.5rem;
+    @include flex(flex, flex-start, flex-start);
+    position: relative;
+  }
+  &__block {
+    flex-basis: 60%;
+    justify-self: right;
+  }
+  &__wrapper {
+    @include width-height(60rem, 45rem);
+  }
+  &__image {
+    margin-top: 8rem;
+    @include width-height(100%, auto);
+  }
+  
+
+
+  &__card {
+    flex-basis: 40%;
+    position: relative;
+    height: 74rem;
+    background-color: $color-card;
+    padding: 14rem 4rem 15rem 8rem;
+    p {
+      @extend %font-primary;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      color: $color-font-bold;
+    }
+    p:nth-of-type(2) {
+      margin-bottom: 2rem;
+    }
+    span {
+      color: $color-span;
+      @extend %font-testimonials;
+      text-transform: uppercase;
+      letter-spacing: 0.09rem;
+      font-weight: bold;
+    }
+    b {
+      color: $color-span;
+      text-transform: uppercase;
+      @extend %font-testimonials;
+      letter-spacing: 0.05rem;
+    }
+  }
+  &__title {
+    margin-bottom: 1.8rem;
+    @extend %font-title;
+    font-size: 3rem;
+    color: $color-font-light;
+    line-height: 4rem;
+    //text-shadow: 2px 3px 2px rgba(0,0,0,0.3);
+    span {
+      color: $color-span;
+      @extend %font-testimonials;
+      text-transform: uppercase;
+      letter-spacing: 0.07rem;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 1rem;
+    color: $color-font-light;
+    font-size: 2rem;
+    letter-spacing: 0.07rem;	
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.3);
+  }
+                        &__title,
+                        &__subtitle,
+                        &__text {
+                          transition: 0.5s opacity linear;
+                        }
+  .flipping {
+    position: absolute;
+    bottom: 12.5rem;
+    left: 9rem;
+    width: 10rem;
+    @include flex(flex, space-between, center);
+    &__img-left,
+    &__img-right {
+      @include width-height(4rem);
+      opacity: 0.8;
+      transition: 0.25s all ease;
+      cursor: pointer;
+      &_hover:hover {
+        opacity: 1;
+        transform: scale(1.07);
+      }
+    }
+  }
+}
+
+                    .hidden {
+                      display: none;
+                      opacity: 0;
+                    }

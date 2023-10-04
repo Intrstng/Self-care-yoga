@@ -36,3 +36,41 @@
     transition: 1s ease-in-out;
   }
 }
+
+// Scroll down button
+.scroll-down {
+  position: absolute;
+  bottom: 8%;
+  right: 7%;
+  &__img {
+    @include width-height(5rem);
+    transition: 0.4 all ease;
+    opacity: 0.8;
+    &_hover:hover {
+      transform: scale(1.07);
+      opacity: 1;
+    }
+  }
+}
+
+// Scroll up button
+.scroll-up {
+  position: fixed;
+  right: 6.5%;
+  bottom: 6%;
+  cursor: pointer;
+  display: none;
+  @include width-height(5rem);
+  &_show {
+    display: block;
+  }
+  &__img {
+    @include width-height(5rem);
+    transition: 0.4 all ease;
+    opacity: 0.8;
+    &_hover:hover {
+      transform: scale(1.07);
+      opacity: 1;
+    }
+  }
+}

@@ -1,5 +1,7 @@
 .header {
-  //width: 100%;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
   @include width-height(100vw, 10vh);
   background-color: $color-light;
   position: relative;

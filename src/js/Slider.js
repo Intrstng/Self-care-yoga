@@ -9,7 +9,7 @@ let sliderCount = 0,
 
 function showSlide() {
   sliderWidth = document.querySelector('.slider').offsetWidth;
-  sliderLine.computedStyleMap.width = sliderWidth * sliderImages.length + 'px';
+  sliderLine.style.width = sliderWidth * sliderImages.length + 'px';
   sliderImages.forEach(item => item.style.width = sliderWidth + 'px');
   rollSlider();
 }

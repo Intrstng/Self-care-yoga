@@ -1,0 +1,31 @@
+.lotus {
+  margin: 2rem auto;
+  width: 40rem;
+
+  position: relative;
+  &__img {
+    display: block;
+    @include width-height(8rem);
+    margin: 0 auto;
+  }
+  &:before {
+    display: inline-block;
+    position: absolute;
+    @include top-left(4rem);
+    height: 1px;
+    content: "";
+    text-shadow: none;
+    background-color: $color-black;
+    width: 10rem;
+  }
+  &:after {
+    display: inline-block;
+    position: absolute;
+    @include top-right(4rem);
+    height: 1px;
+    content: "";
+    text-shadow: none;
+    background-color: $color-black;
+    width: 10rem;
+  }
+}
