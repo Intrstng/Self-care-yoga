@@ -22,3 +22,7 @@ nextCard.addEventListener('click',showNext);
 //   nextSlide()
 //   console.log('next')
 // }, 5000);
+
+
+
+

@@ -1,0 +1,13 @@
+.about {
+  width: 100vw;
+  margin: 0;
+  padding: 5rem 0 0;
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__content {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+}
