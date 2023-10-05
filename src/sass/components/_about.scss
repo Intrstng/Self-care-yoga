@@ -1,13 +1,31 @@
 .about {
   width: 100vw;
   margin: 0;
-  padding: 5rem 0 0;
+  padding: 4.5rem 0;
   &__title {
+    margin-bottom: 4.5rem;
     text-align: center;
+    font-size: 3rem;
+    color: $color-dark-bg;
     text-transform: uppercase;
   }
   &__content {
     width: $desktop-width;
+    @include flex(flex, space-between, flex-start);
+    gap: 4rem;
     margin: 0 auto;
+  }
+  &__block {
+    flex-basis: 40%;
+    justify-self: center;
+  }
+  &__wrapper {
+    @include width-height(60rem, 45rem);
+  }
+  &__image {
+    @include width-height(100%, auto);
+  }
+  &__card {
+    flex-basis: 60%;
   }
 }
