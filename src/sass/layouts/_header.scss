@@ -81,8 +81,10 @@
         }
       }
     }
-
-
+    .button-header {
+      position: absolute;
+      @include top-left(59rem, 18rem);
+    }
   }
 }
 

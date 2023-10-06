@@ -29,3 +29,43 @@
     width: 10rem;
   }
 }
+
+.dot {
+  margin: 1.4rem auto 3.5rem;
+  width: 40rem;
+  position: relative;
+  border: 2px solid $color-dot;
+  @include width-height(2.6rem);
+  border-radius: 50%;
+  &__inner {
+    display: block;
+    position: absolute;
+    @include top-left(50%);
+    @include width-height(0.7rem);
+    transform: translate(-50%, -50%);
+    background-color: $color-dot;
+    border-radius: 50%;
+    margin: 0 auto;
+
+  }
+  &:before {
+    display: inline-block;
+    position: absolute;
+    @include top-left(1rem, 3.5rem);
+    height: 1px;
+    content: "";
+    text-shadow: none;
+    background-color: $color-dark-bg;
+    width: 9rem;
+  }
+  &:after {
+    display: inline-block;
+    position: absolute;
+    @include top-right(1rem, 3.5rem);
+    height: 1px;
+    content: "";
+    text-shadow: none;
+    background-color: $color-dark-bg;
+    width: 9rem;
+  }
+}

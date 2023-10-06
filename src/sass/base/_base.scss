@@ -35,10 +35,23 @@ body {
 .info {
   background-color: $color-light-bg;
   background-image: url('/src/img/bg/bg-vector.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contains;
 }
 
-.coach {
+.parallax {
+  width: 100vw;
+  height: 45rem;
   background-color: $color-bg;
+  background-image: url('/src/img/bg/bg-parallax.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.details {
+  background-color: $color-light-bg;
   background-image: url('/src/img/bg/bg-light.png');
 }
 
