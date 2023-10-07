@@ -57,27 +57,29 @@
     }
     &:before {
       content: '';
-      display: inline-block;
-      margin-right: 1rem;
+      display: block;
+      margin: 0.2rem 0.6rem 0 0;
       background-image: url('/src/img/icons/certificate.png');
       background-repeat: none;
       background-position: center;
       background-size: contain; 
-      @include width-height(1.4rem);
+      @include width-height(1.7rem);
+      float: left;
     }
   }
   &__subitem {
     // list-style-type: none;
-    margin-left: 3rem;
+    margin-left: 2rem;
     &:before {
       content: '';
-            display: inline-block;
-            margin-right: 1rem;
+      display: block;
+      margin: 0.4rem 0.6rem 0 0;
       background-image: url('/src/img/icons/diploma.png');
       background-repeat: none;
       background-position: center;
       background-size: contain; 
-      @include width-height(2.4rem);
+      @include width-height(1.8rem);
+      float: left;
     }
   }
   
