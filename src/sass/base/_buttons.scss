@@ -27,7 +27,7 @@
     &_active {
       opacity: 1;
       background: $color-btn-hover;
-}
+    }
   }
   svg {
     position: absolute;
@@ -40,28 +40,37 @@
   }
 }
 
-.button-header {
-  position: absolute;
-  @include top-left(59rem, 18rem);
-}
-
-
-
-
-
-
-// Scroll down button
-.scroll-down {
-  position: absolute;
-  bottom: 8%;
-  right: 7%;
-  &__img {
-    @include width-height(5rem);
-    transition: 0.4 all ease;
-    opacity: 0.8;
+// Gallery buttons
+.button-select {
+  @include width-height(18rem, 6rem);
+  opacity: 0.7;
+  .btn {
+    @include width-height(18rem, 6rem);
+    @include flex(flex, center, center);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background: $color-btn-bg;
+    border: 1px solid $color-btn-border;
+    outline: none;
+    transition: 1s ease-in-out;
+    span {
+      color: $color-light;
+      text-transform: uppercase;
+      letter-spacing: 0.03rem;
+      font-size: 1.6rem;
+      font-weight: 100;
+    }
     &_hover:hover {
-      transform: scale(1.07);
+      transition: 1s ease-in-out;
+      background: $color-btn-hover;
+    }
+    &_hover:hover svg {
+      stroke-dashoffset: -480;
+    }
+    &_active {
       opacity: 1;
+      background: $color-btn-hover;
     }
   }
 }
@@ -77,6 +86,22 @@
   &_show {
     display: block;
   }
+  &__img {
+    @include width-height(5rem);
+    transition: 0.4 all ease;
+    opacity: 0.8;
+    &_hover:hover {
+      transform: scale(1.07);
+      opacity: 1;
+    }
+  }
+}
+
+// Scroll down button
+.scroll-down {
+  position: absolute;
+  bottom: 8%;
+  right: 7%;
   &__img {
     @include width-height(5rem);
     transition: 0.4 all ease;
