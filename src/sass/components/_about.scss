@@ -1,7 +1,10 @@
 .about {
   width: 100vw;
-  margin: 0;
+  margin: 0 auto;
   padding: 4.5rem 0;
+  &__card {
+    padding-left: 5rem;
+  }
   &__title {
     margin-bottom: 1.5rem;
     text-align: center;
@@ -11,21 +14,81 @@
   }
   &__content {
     width: $desktop-width;
-    @include flex(flex, space-between, flex-start);
+    @include flex(flex, center, center);
     gap: 4rem;
     margin: 0 auto;
   }
   &__block {
-    flex-basis: 40%;
+    flex-basis: 45%;
     justify-self: center;
   }
   &__wrapper {
     @include width-height(60rem, 45rem);
   }
   &__image {
-    @include width-height(100%, auto);
+    @include width-height(40rem, auto);
   }
   &__card {
-    flex-basis: 60%;
+    flex-basis: 55%;
+  }
+  &__text,
+  &__list,
+  &__innerlist {
+    width: 100%;
+    @extend %font-decoration;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: $color-bold;
+    letter-spacing: 0.07rem;
+  }
+  &__text {
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+  }
+  &__list,
+  &__innerlist {
+    list-style-type: none;
+  }
+  &__item {
+    font-size: 1.4rem;
+    &:nth-last-of-type(1) {
+      margin-bottom: 2.5rem;
+    }
+    &:before {
+      content: '';
+      display: inline-block;
+      margin-right: 1rem;
+      background-image: url('/src/img/icons/certificate.png');
+      background-repeat: none;
+      background-position: center;
+      background-size: contain; 
+      @include width-height(1.4rem);
+    }
+  }
+  &__subitem {
+    // list-style-type: none;
+    margin-left: 3rem;
+    &:before {
+      content: '';
+            display: inline-block;
+            margin-right: 1rem;
+      background-image: url('/src/img/icons/diploma.png');
+      background-repeat: none;
+      background-position: center;
+      background-size: contain; 
+      @include width-height(2.4rem);
+    }
+  }
+  
+  &__subtitle {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    @extend %font-decoration;
+    font-weight: bold;
+    color: $color-span;
+  }
+  &__list {
+
   }
 }

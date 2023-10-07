@@ -5,6 +5,7 @@ import  { prevCard, nextCard, showPrev, showNext  } from './js/Cards';
 import { scrollUp, trackScroll, scrollTop } from './js/ScrollTop';
 import { playVideoBtns, playVideo, stopVideo } from './js/VideoPlayer';
 import { galleryBtns, selectVideoByTag } from './js/VideoGallery';
+import { details, toggleAccordionItems, closeAccordionByClickOutside } from './js/Accordion';
 
 // Welcome section slider
 sliderBtnNext.addEventListener('click', nextSlide);
@@ -22,12 +23,19 @@ nextCard.addEventListener('click',showNext);
 
 // Video player
 playVideoBtns.forEach(item => item.addEventListener('click', (e) => playVideo(e)));
-window.addEventListener('click', stopVideo);
+document.body.addEventListener('click', stopVideo);
 
 // Video gallery
 galleryBtns.forEach(item => {
   item.addEventListener('click', (e) => selectVideoByTag(e));
 });
+
+// Accordion
+details.forEach(item => item.addEventListener('toggle', toggleAccordionItems));
+document.body.addEventListener('click',  closeAccordionByClickOutside);
+
+
+
 
 
 

@@ -50,6 +50,11 @@ body {
   background-attachment: fixed;
 }
 
+.coach {
+  width: 100vw;
+  margin: 0 auto;
+}
+
 .details {
   background-color: $color-light-bg;
   background-image: url('/src/img/bg/bg-light.png');
