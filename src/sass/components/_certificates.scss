@@ -16,7 +16,7 @@
   }
   .gallery {
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-    max-width: 40%;
+    max-width: 38%;
     margin: 0 auto;
     overflow: hidden;
     &__line {
@@ -29,7 +29,7 @@
     &__btn-prev,
     &__btn-next {
       position: absolute;
-      transform: translateY(-50%);
+      //transform: translateY(-50%);
       background-color: transparent;
       border: none;
       transition: all 0.25s ease;
@@ -49,9 +49,6 @@
       @include top-right(50%, 15%);
     }
   }
-
-
-
 }
 
 

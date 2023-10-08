@@ -1,5 +1,5 @@
-const prevCard = document.querySelector('.flipping__img-left'),
-      nextCard = document.querySelector('.flipping__img-right'),
+const cardPrevBtn = document.querySelector('.flipping__img-left'),
+      cardNextBtn = document.querySelector('.flipping__img-right'),
       articles = document.querySelectorAll('.select');
 
 let counterCard = 0;
@@ -31,5 +31,4 @@ function showPrev() {
     });
 }
 
-
-export { prevCard, nextCard, showPrev, showNext }
+export { cardPrevBtn, cardNextBtn, showPrev, showNext }

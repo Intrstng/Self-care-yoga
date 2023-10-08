@@ -18,549 +18,599 @@
       </a>
         <nav class="navigation">
           <ul class="navigation__list">
-              <li class="navigation__item"><a class="navigation__link navigation__link_hover navigation__link_active" href="index.html" active>Обо мне</a></li>
-              <li class="navigation__item"><a class="navigation__link navigation__link_hover navigation__link_active" href="#">Заботливая йога</a></li>
-              <li class="navigation__item"><a class="navigation__link navigation__link_hover navigation__link_active" href="#">Персональные занятия</a></li>
-              <li class="navigation__item"><a class="navigation__link navigation__link_hover navigation__link_active" href="#">Подробнее</a></li>
-              <li class="navigation__item"><a class="navigation__link navigation__link_hover navigation__link_active" href="#">Отзывы</a></li>
-              <li class="navigation__item"><a class="navigation__link navigation__link_hover navigation__link_active" href="#">Контакты</a></li>
+              <li class="navigation__item"><a class="navigation__link navigation__link_hover navigation__link_active" href="#about" active>Обо мне</a></li>
+              <li class="navigation__item"><a class="navigation__link navigation__link_hover navigation__link_active" href="#info">Заботливая йога</a></li>
+              <li class="navigation__item"><a class="navigation__link navigation__link_hover navigation__link_active" href="#practices">Персональные занятия</a></li>
+              <li class="navigation__item"><a class="navigation__link navigation__link_hover navigation__link_active" href="#questions">Подробнее</a></li>
+              <li class="navigation__item"><a class="navigation__link navigation__link_hover navigation__link_active" href="#testimonials">Отзывы</a></li>
+              <li class="navigation__item"><a class="navigation__link navigation__link_hover navigation__link_active" href="#contacts">Контакты</a></li>
           </ul>
         </nav>
     </div>
   </header>
   <main>
-
-<!-- Welcome
-======================== -->
-<section class="welcome" aria-label="Greetings">
-  <div class="slider">
-    <div class="slider__line">
-      <!-- <img class="slider__img" src="./src/img/slider/1.jpg" alt="slider">
-      <img class="slider__img" src="./src/img/slider/2.jpg" alt="slider">
-      <img class="slider__img" src="./src/img/slider/3.jpg" alt="slider">
-      <img class="slider__img" src="./src/img/slider/2.jpg" alt="slider"> -->
-      <div class="slider__img slider__img1">
-        <h2 class="slider__title">Добро пожаловать в &#171;Заботливую йогу!&#187;</h2>
-          <h3 class="slider__subtitle">Какая она, <span>&#171;Заботливая йога?&#187;</span></h3>
-            <h4 class="slider__text slide1">Она не про сложность поз и движений. А про заботу и любовь.</h4>
-              <!-- Button -->
-              <div class="button button-header">
-                <a class="btn btn_hover" href="#">
-                  <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                  </svg>
-                  <span>Подробнее</span>
-                </a>
-              </div>
-              <div class="social">
-                <a class="social__link" href="https://www.instagram.com/yoga_pilipovich/" target="_blank">
-                  <img class="social__img social__img_hover" src="/src/img/icons/instagram.svg" alt="instagram">
-                </a>
-                <a class="social__link" href="https://t.me/alexandra_pilipovich" target="_blank">
-                  <img class="social__img social__img_hover" src="/src/img/icons/telegram.svg" alt="telegram">
-                </a>
-              </div>
-      </div>
-        <div class="slider__img slider__img2">
-          <h4 class="slider__text slide2">Не про идеализирование, а про принятие.</h4>
-        </div>
-          <div class="slider__img slider__img3">
-            <h4 class="slider__text slide3">Не про &#171;быстрее, сильнее, выше&#187;, а про «внимательнее, здоровее, гармоничнее».</h4>
+  <!-- Welcome
+  ======================== -->
+    <section class="welcome" aria-label="Greetings">
+      <div class="slider">
+        <div class="slider__line">
+          <div class="slider__img slider__img1">
+            <h2 class="slider__title">Добро пожаловать в &#171;Заботливую йогу!&#187;</h2>
+              <h3 class="slider__subtitle">Какая она, <span>&#171;Заботливая йога?&#187;</span></h3>
+                <h4 class="slider__text slide1">Она не про сложность поз и движений. А про заботу и любовь.</h4>
+                  <!-- Button -->
+                  <div class="button button-header">
+                    <a class="btn btn_hover" href="#">
+                      <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                      </svg>
+                      <span>Подробнее</span>
+                    </a>
+                  </div>
+                  <div class="social">
+                    <a class="social__link" href="https://www.instagram.com/yoga_pilipovich/" target="_blank">
+                      <img class="social__img social__img_hover" src="/src/img/icons/instagram.svg" alt="instagram">
+                    </a>
+                    <a class="social__link" href="https://t.me/alexandra_pilipovich" target="_blank">
+                      <img class="social__img social__img_hover" src="/src/img/icons/telegram.svg" alt="telegram">
+                    </a>
+                  </div>
           </div>
-            <div class="slider__img slider__img4">
-              <h4 class="slider__text slide4">Она о диалоге с собой, о внутреннем мире. А уже лишь затем о внешнем.</h4>
+            <div class="slider__img slider__img2">
+              <h4 class="slider__text slide2">Не про идеализирование, а про принятие.</h4>
             </div>
-    </div>
-      <button class="slider__btn-prev">
-        <img class="slider__btn-img slider__btn-prev_hover" src="/src/img/icons/prev.png" alt="button">
-      </button>
-        <button class="slider__btn-next">
-          <img class="slider__btn-img slider__btn-next_hover" src="/src/img/icons/next.png" alt="button">
-        </button>
-          <div class="slider__wrapper">
-            <div class="slider__dot slider__dot_hover slider__dot_active"></div>
-            <div class="slider__dot slider__dot_hover"></div>
-            <div class="slider__dot slider__dot_hover"></div>
-            <div class="slider__dot slider__dot_hover"></div>
-          </div>
-            <a class="scroll-down" href="#info">
-              <img class="scroll-down__img scroll-down__img_hover" src="/src/img/icons/arrow-down-light.png" alt="scroll down">
-            </a>
-  </div>
-</section>
-
-<!-- Course
-======================== -->
-<article class="info" aria-label="All information about self-care yoga" id="info">
-  <section class="course" aria-label="Introduction to self-care yoga">
-    <div class="course__content">
-      <div class="course__card">
-        <h2 class="course__title title-animation">Для кого <span>&#171;Заботливая йога&#187;</span>?</h2>
-          <div class="course__text-block text-animation">
-            <p class="course__text">Для тех, кто никогда не занимался йогой и боится, что это слишком сложно.</p>
-              <p class="course__text">Она для тех, кто хочет найти контакт с самим собой, со своим телом и сознанием.</p>
-                <p class="course__text">Для тех, кто шаг за шагом, без спешки и амбиций готов идти к здоровью физическому и ментальному.</p>
-          </div>
-      </div>
-      <div class="course__block">
-        <picture class="course__wrapper-main">
-          <source srcset="/src/img/mobile-images/sunset-small.jpg" media="(max-width: 380px)">
-          <source srcset="/src/img/responsive-images/sunset-responsive.jpg" media="(max-width: 768px)">
-          <img class="course__image-main" src="/src/img/cards/sunset.jpg" alt="Sunset">
-        </picture>
-          <picture class="course__wrapper-add">
-            <source srcset="/src/img/mobile-images/dog-small.jpg" media="(max-width: 380px)">
-            <source srcset="/src/img/responsive-images/dog-responsive.jpg" media="(max-width: 768px)">
-            <img class="course__image-add" src="/src/img/cards/dog.jpg" alt="Downward dog">
-          </picture>
-      </div>
-    </div>
-  </section>
-  <div class="lotus">
-    <img class="lotus__img" src="/src/img/icons/lotus.svg" alt="Logo lotus delimiter">
-  </div>
-
-<!-- Description
-======================== -->
-  <section class="description" aria-label="More details about self-care yoga">
-    <div class="description__content">
-      <div class="description__block">
-        <picture class="description__wrapper">
-          <source srcset="/src/img/mobile-images/peace-small.jpg" media="(max-width: 380px)">
-          <source srcset="/src/img/responsive-images/peace-responsive.jpg" media="(max-width: 768px)">
-          <img class="description__image" src="/src/img/cards/peace.jpg" alt="Peace">
-        </picture>
-      </div>
-      <div class="description__card">
-        <h2 class="description__title select" data-slide="0">Вы слышали о <span>&#171;Заботливой йоге&#187;</span>?</h2>
-          <p class="description__text select" data-slide="0">Интересно, все слышали про йогу Айенгара, Виньяса, Флоу, Аштанга, Кундалини и многие другие виды. А про <span>&#171;Заботливую&#187;</span> ни разу!</p>
-          <p class="description__text select" data-slide="0">Да, в официальных классификациях вы не найдете такое направление. И описать его в двух словах достаточно сложно. Но если коротко, <strong>«Заботливая йога»</strong> — это мягкий и деликатный стиль, который включает в себя элементы различных направлений. В первую очередь — это Вини-йога, Йогатерапия и соматический подход. А также йога-вьяяма, флоу-йога, йога Айенгара, инь-йога.</p>
-
-            <h3 class="description__subtitle hidden select" data-slide="1">Почему именно такое смешение стилей?</h3>
-              <p class="description__text hidden select" data-slide="1">Во-первых, потому что каждый человек уникален. И для каждого нужно находить подход и практику, подходящую именно под его нужды. Ограничиваясь одним стилем , порой это бывает сложно сделать. Особенно, в самом начале пути.</p>
-
-              <p class="description__text hidden select" data-slide="2">Во-вторых, на данный момент для себя я не нашла того единого направления, которое бы отвечало всем моим требованиям и полностью подходило для моих личных нужд.</p>
-
-              <p class="description__text hidden select" data-slide="3">В-третьих, исходя из личного опыта я вижу, что большая часть направлений йоги будут довольно жесткими и травмоопасными для человека, который последние годы вел малоподвижный образ жизни. И даже самые базовые варианты исполнения асан могут оказаться крайне сложными или же нанести вред практикующему со временем. Поэтому для мягкого и аккуратного старта практики можно использовать именно адаптивную йогу с элементами йогатерапии. А уже затем практикующий может двигаться дальше, углубляя свои навыки.</p>
-
-              <p class="description__text hidden select" data-slide="4">В-четвертых, я искренне считаю, что для многих людей такая нагрузка (и даже перегрузка) просто не нужна. А для обретения гармонии тела, ума и духа можно использовать более мягкий и бережный подход. Ведь порой важно практиковать не как можно сложнее, а регулярно! И для того, чтоб практика была регулярной (опять же, особенно важно это в начале вашей практики) занятия должны вызывать положительные ассоциации в уме и благоприятно сказываться на теле. Но никак не давать ощущение слабости и неуверенности в собственных силах.</p>
-                <div class="flipping">
-                  <img class="flipping__img-left flipping__img-left_hover" src="/src/img/icons/left.png" alt="left flipping">
-                  <img class="flipping__img-right flipping__img-right_hover" src="/src/img/icons/right.png" alt="right flipping">
+              <div class="slider__img slider__img3">
+                <h4 class="slider__text slide3">Не про &#171;быстрее, сильнее, выше&#187;, а про «внимательнее, здоровее, гармоничнее».</h4>
+              </div>
+                <div class="slider__img slider__img4">
+                  <h4 class="slider__text slide4">Она о диалоге с собой, о внутреннем мире. А уже лишь затем о внешнем.</h4>
                 </div>
+        </div>
+          <button class="slider__btn-prev">
+            <img class="slider__btn-img slider__btn-prev_hover" src="/src/img/icons/prev.png" alt="button">
+          </button>
+            <button class="slider__btn-next">
+              <img class="slider__btn-img slider__btn-next_hover" src="/src/img/icons/next.png" alt="button">
+            </button>
+              <div class="slider__wrapper">
+                <div class="slider__dot slider__dot_hover slider__dot_active"></div>
+                <div class="slider__dot slider__dot_hover"></div>
+                <div class="slider__dot slider__dot_hover"></div>
+                <div class="slider__dot slider__dot_hover"></div>
+              </div>
+                <a class="scroll-down" href="#info">
+                  <img class="scroll-down__img scroll-down__img_hover" src="/src/img/icons/arrow-down-light.png" alt="scroll down">
+                </a>
       </div>
-        <!--Scroll up button-->
-        <a class="scroll-up" href="#">
-          <img class="scroll-up__img scroll-up__img_hover" src="/src/img/icons/scroll-top.png" alt="scroll up">
-        </a>
-    </div>
+    </section>
+
+    <!-- Course
+    ======================== -->
+    <article class="info" id="info" aria-label="All information about self-care yoga">
+      <section class="course" aria-label="Introduction to self-care yoga">
+        <div class="course__content">
+          <div class="course__card">
+            <h2 class="course__title title-animation">Для кого <span>&#171;Заботливая йога&#187;</span>?</h2>
+              <div class="course__text-block text-animation">
+                <p class="course__text">Для тех, кто никогда не занимался йогой и боится, что это слишком сложно.</p>
+                  <p class="course__text">Она для тех, кто хочет найти контакт с самим собой, со своим телом и сознанием.</p>
+                    <p class="course__text">Для тех, кто шаг за шагом, без спешки и амбиций готов идти к здоровью физическому и ментальному.</p>
+              </div>
+          </div>
+          <div class="course__block">
+            <picture class="course__wrapper-main">
+              <source srcset="/src/img/mobile-images/sunset-small.jpg" media="(max-width: 380px)">
+              <source srcset="/src/img/responsive-images/sunset-responsive.jpg" media="(max-width: 768px)">
+              <img class="course__image-main" src="/src/img/cards/sunset.jpg" alt="Sunset">
+            </picture>
+              <picture class="course__wrapper-add">
+                <source srcset="/src/img/mobile-images/dog-small.jpg" media="(max-width: 380px)">
+                <source srcset="/src/img/responsive-images/dog-responsive.jpg" media="(max-width: 768px)">
+                <img class="course__image-add" src="/src/img/cards/dog.jpg" alt="Downward dog">
+              </picture>
+          </div>
+        </div>
+      </section>
       <div class="lotus">
         <img class="lotus__img" src="/src/img/icons/lotus.svg" alt="Logo lotus delimiter">
       </div>
-  </section>
 
-<!-- Cards
-======================== --> 
-  <section class="cards" aria-label="What gives you self-care yoga">
-    <div class="cards__content">
-      <div class="cards__item">
-        <figure>
-          <picture>
-            <source srcset="/src/img/leaf-parts-mobile/leaf-1-small.jpg" media="(max-width: 1000px)">
-            <img class="cards-img" src="/src/img/leaf-parts/leaf-1.jpg" alt="leaf">
-          </picture>
-            <figcaption class="figcaption figcaption-first">
-                <p class="cards-text">Укрепляет иммунную систему.</p>
-                <p class="cards-text">Корректирует осанку и оздоравливает позвоночник.</p>
-            </figcaption>
-        </figure>
-      </div>
-
-      <div class="cards__item">
-        <figure>
-          <picture>
-            <source srcset="/src/img/leaf-parts-mobile/leaf-2-small.jpg" media="(max-width: 1000px)">
-            <img class="cards-img" src="/src/img/leaf-parts/leaf-2.jpg" alt="leaf">
-          </picture>
-            <figcaption class="figcaption figcaption-second">
-              <h3 class="cards-title">Что дает <span>&#171;Заботливая йога&#187;</span>?</h3>
-              <p class="cards-text">Улучшает концентрацию внимания и координацию движений.</p>
-            </figcaption>
-        </figure>
-      </div>
-
-      <div class="cards__item">
-        <figure>
-          <picture>
-            <source srcset="/src/img/leaf-parts-mobile/leaf-3-small.jpg" media="(max-width: 1000px)">
-            <img class="cards-img" src="/src/img/leaf-parts/leaf-3.jpg" alt="leaf">
-          </picture>
-            <figcaption class="figcaption figcaption-third">
-              <p class="cards-text">Увеличивает мобильность суставов и эластичность мышц.</p>
-              <p class="cards-text">Нормализует работу нервной, эндокринной, дыхательной, сердечно-сосудистой и моче-половой систем.</p>
-            </figcaption>
-        </figure>
-      </div>
-
-      <div class="cards__item">
-        <figure>
-          <picture>
-            <source srcset="/src/img/leaf-parts-mobile/leaf-4-small.jpg" media="(max-width: 1000px)">
-            <img class="cards-img" src="/src/img/leaf-parts/leaf-4.jpg" alt="leaf">
-          </picture>
-            <figcaption class="figcaption figcaption-fourth">
-              <p class="cards-text">Развивает физическую выносливость.</p>
-              <p class="cards-text">Укрепляет опорно-двигательный аппарат.</p>
-            </figcaption>
-        </figure>
-      </div>
-
-      <div class="cards__item">
-        <figure>
-          <picture>
-            <source srcset="/src/img/leaf-parts-mobile/leaf-5-small.jpg" media="(max-width: 1000px)">
-            <img class="cards-img" src="/src/img/leaf-parts/leaf-5.jpg" alt="leaf">
-          </picture>
-            <figcaption class="figcaption figcaption-fifth">
-              <p class="cards-text">Помогает снять физическое и ментальное напряжение.</p>
-            </figcaption>
-        </figure>
-      </div>
-
-      <div class="cards__item">
-        <figure>
-          <picture>
-            <source srcset="/src/img/leaf-parts-mobile/leaf-6-small.jpg" media="(max-width: 1000px)">
-            <img class="cards-img" src="/src/img/leaf-parts/leaf-6.jpg" alt="leaf">
-          </picture>
-            <figcaption class="figcaption figcaption-sixth">
-              <p class="cards-text">Помогает восстановиться после родов.</p>
-            </figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <div class="lotus">
-    <img class="lotus__img" src="/src/img/icons/lotus.svg" alt="Logo lotus delimiter">
-  </div>
-</article>
-
-<article class="coach" aria-label="
-more info about the coach" id="coach">
-
-  <!-- About me
-  ======================== --> 
-  <section class="about" aria-label="What gives you self-care yoga">
-    <h2 class="about__title">Обо мне</h2>
-      <!-- Dot -->
-      <div class="dot">
-        <div class="dot__inner"></div>
-      </div>
-        <div class="about__content">
-          <div class="about__card">
-            <h3 class="about__text">Меня зовут Александра Пилипович и я искренне считаю, что с помощью йоги жизнь каждого человека сможет стать более качественной и наполненной.</h3>
-            <h4 class="about__subtitle">Мои обучения</h4>
-              <ul class="about__list">
-                <li class="about__item">Yoga Alliance International. Преподаватель Хатха-Йоги <strong>YTTC-200</strong>. 2020 г.</li>
-                <li class="about__item">Санкт-Петербургский Институт Восточных Методов Реабилитации. Упражнения йоги как метод адаптивной физкультуры. 2022 г.</li>
-                <li class="about__item">Анатомия фитнеса. Пилатес. От анатомии к движению. 2023 г.</li>
-                <li class="about__item">Центр Информационной реабилитации. Специалист энергоинформационных технологий. 2016 г.</li>
-                <h4 class="about__subtitle">Дополнительно:</h4>
-                <ul class="about__innerlist">
-                  <li class="about__subitem">Семинар &#171;Тейпирование&#187; (Анатомия Фитнеса. 2023 г.)</li>
-                  <li class="about__subitem">Семинар &#171;Ротаторная манжета плеча&#187; (Анатомия Фитнеса. 2022 г.)
-                  </li>
-                  <li class="about__subitem">Онлайн курс по теории и практики йоги (школа йоги &#171;Чатуранга&#187;. 2021 г.)</li>
-                  <li class="about__subitem">Семинар &#171;Соматический подход в телесно-ориентированной терапии: Школа Фельденкрайза. Соматическое обучение Томаса Ханны&#187; (БГПУ им. М.Танка. 2020 г.)</li>
-                </ul>
-              </ul>
+    <!-- Description
+    ======================== -->
+      <section class="description" id="description" aria-label="More details about self-care yoga">
+        <div class="description__content">
+          <div class="description__block">
+            <picture class="description__wrapper">
+              <source srcset="/src/img/mobile-images/peace-small.jpg" media="(max-width: 380px)">
+              <source srcset="/src/img/responsive-images/peace-responsive.jpg" media="(max-width: 768px)">
+              <img class="description__image" src="/src/img/cards/peace.jpg" alt="Peace">
+            </picture>
           </div>
-            <div class="about__block">
-              <picture class="about__wrapper">
-                <source srcset="/src/img/mobile-images/coach-small.jpg" media="(max-width: 380px)">
-                <source src="/src/img/responsive-images/coach-responsive.jpg" media="(max-width: 768px)">
-                <img class="about__image" src="/src/img/coach/coach.jpg" alt="Coach">
-              </picture>
-            </div>
-        </div>
-          <div class="lotus">
-            <img class="lotus__img" src="/src/img/icons/lotus.svg" alt="Logo lotus delimiter">
-          </div>
-  </section>
-</article>
-  <div class="parallax"></div>
-  <!-- Second Article
-  ======================== --> 
-  <article class="details" aria-label="
-info about the course" id="details">
+          <div class="description__card">
+            <h2 class="description__title select" data-slide="0">Вы слышали о <span>&#171;Заботливой йоге&#187;</span>?</h2>
+              <p class="description__text select" data-slide="0">Интересно, все слышали про йогу Айенгара, Виньяса, Флоу, Аштанга, Кундалини и многие другие виды. А про <span>&#171;Заботливую&#187;</span> ни разу!</p>
+              <p class="description__text select" data-slide="0">Да, в официальных классификациях вы не найдете такое направление. И описать его в двух словах достаточно сложно. Но если коротко, <strong>«Заботливая йога»</strong> — это мягкий и деликатный стиль, который включает в себя элементы различных направлений. В первую очередь — это Вини-йога, Йогатерапия и соматический подход. А также йога-вьяяма, флоу-йога, йога Айенгара, инь-йога.</p>
 
-    <!-- Practices
-    ======================== --> 
-    <section class="practices" aria-label="Trial video practices" id="practices">
-      <div class="practices__content">
-        <h2 class="practices__title">Пробные практики</h2>
-        <!-- Dot --> 
-        <div class="dot">
-          <div class="dot__inner"></div>
-        </div>
-        <div class="practices__buttons">
-          <!-- Button -->
-          <div class="button-select">
-            <a class="btn btn_hover btn_active" href="#practices" data-tag="yoga, therapy, pilates, gymnastics, breathing, relaxation">
-              <span>Все</span>
-            </a>
-          </div>
-            <!-- Button -->
-            <div class="button-select">
-              <a class="btn btn_hover" href="#practices" data-tag="yoga, therapy, gymnastics, breathing, relaxation">
-                <span>Йога</span>
-              </a>
-            </div>
-              <!-- Button -->
-              <div class="button-select">
-                <a class="btn btn_hover" href="#practices" data-tag="therapy, gymnastics, breathing, relaxation">
-                  <span>Йогатерапия</span>
-                </a>
-              </div>
-                <!-- Button -->
-                <div class="button-select">
-                  <a class="btn btn_hover" href="#practices" data-tag="pilates, breathing">
-                    <span>Пилатес</span>
-                  </a>
-                </div>
-                  <!-- Button -->
-                  <div class="button-select">
-                    <a class="btn btn_hover" href="#practices" data-tag="gymnastics, breathing">
-                      <span>Работа с дыханием</span>
-                    </a>
-                  </div>
-                    <!-- Button -->
-                    <div class="button-select">
-                      <a class="btn btn_hover" href="#practices" data-tag="relaxation">
-                        <span>Релаксация</span>
-                      </a>
+                <h3 class="description__subtitle hidden select" data-slide="1">Почему именно такое смешение стилей?</h3>
+                  <p class="description__text hidden select" data-slide="1">Во-первых, потому что каждый человек уникален. И для каждого нужно находить подход и практику, подходящую именно под его нужды. Ограничиваясь одним стилем , порой это бывает сложно сделать. Особенно, в самом начале пути.</p>
+
+                  <p class="description__text hidden select" data-slide="2">Во-вторых, на данный момент для себя я не нашла того единого направления, которое бы отвечало всем моим требованиям и полностью подходило для моих личных нужд.</p>
+
+                  <p class="description__text hidden select" data-slide="3">В-третьих, исходя из личного опыта я вижу, что большая часть направлений йоги будут довольно жесткими и травмоопасными для человека, который последние годы вел малоподвижный образ жизни. И даже самые базовые варианты исполнения асан могут оказаться крайне сложными или же нанести вред практикующему со временем. Поэтому для мягкого и аккуратного старта практики можно использовать именно адаптивную йогу с элементами йогатерапии. А уже затем практикующий может двигаться дальше, углубляя свои навыки.</p>
+
+                  <p class="description__text hidden select" data-slide="4">В-четвертых, я искренне считаю, что для многих людей такая нагрузка (и даже перегрузка) просто не нужна. А для обретения гармонии тела, ума и духа можно использовать более мягкий и бережный подход. Ведь порой важно практиковать не как можно сложнее, а регулярно! И для того, чтоб практика была регулярной (опять же, особенно важно это в начале вашей практики) занятия должны вызывать положительные ассоциации в уме и благоприятно сказываться на теле. Но никак не давать ощущение слабости и неуверенности в собственных силах.</p>
+                    <div class="flipping">
+                      <img class="flipping__img-left flipping__img-left_hover" src="/src/img/icons/left.png" alt="left flipping">
+                      <img class="flipping__img-right flipping__img-right_hover" src="/src/img/icons/right.png" alt="right flipping">
                     </div>
-        </div>
-        <div class="video">
-          <div class="video__card" data-type="yoga">
-            <img class="video__img video__img_hover" src="/src/img/video/yoga.jpg">
-            <img class="video__icon video__icon_hover" src="/src/img/icons/play.png" data-count="0">
           </div>
-          <div class="video__card" data-type="therapy">
-            <img class="video__img video__img_hover" src="/src/img/video/therapy.jpg">
-            <img class="video__icon video__icon_hover" src="/src/img/icons/play.png" data-count="1">
-          </div>
-          <div class="video__card" data-type="pilates">
-            <img class="video__img video__img_hover" src="/src/img/video/pilates.jpg">
-            <img class="video__icon video__icon_hover" src="/src/img/icons/play.png" data-count="2">
-          </div>
-          <div class="video__card" data-type="gymnastics">
-            <img class="video__img video__img_hover" src="/src/img/video/gymnastics.jpg">
-            <img class="video__icon video__icon_hover" src="/src/img/icons/play.png" data-count="3">
-          </div>
-          <div class="video__card" data-type="breathing">
-            <img class="video__img video__img_hover" src="/src/img/video/breathing.jpg">
-            <img class="video__icon video__icon_hover" src="/src/img/icons/play.png" data-count="4">
-          </div>
-          <div class="video__card" data-type="relaxation">
-            <img class="video__img video__img_hover" src="/src/img/video/relax.jpg">
-            <img class="video__icon video__icon_hover" src="/src/img/icons/play.png" data-count="5">
-          </div>
-        </div>
-          <div class="video-player" id="videoPlayer">
-            <iframe width="800" height="600" src="https://www.youtube.com/embed/1ldoWsIR9dQ?si=BP6rUpLNW3V_bhus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="myVideo"></iframe>
-          </div>
-      </div>
-        <div class="lotus">
-          <img class="lotus__img" src="/src/img/icons/lotus.svg" alt="Logo lotus delimiter">
-        </div>
-    </section>
-      <!-- Questions
-      ======================== --> 
-      <section class="questions" aria-label="Frequently asked questions" id="questions">
-        <div class="questions__content">
-          <h2 class="questions__title">Вопрос-ответ</h2>
-          <!-- Dot --> 
-          <div class="dot">
-            <div class="dot__inner"></div>
-          </div>
-            <div class="questions__list">
-              <details>
-                  <summary class="questions__summary">Как проводятся занятия?</summary>
-                  <p class="questions__text">Индивидуальные занятия проводятся онлайн и выстраиваются исходя из физического и психологического состояния практикующего после личной беседы и заполнения анкеты.</n>
-                  Продолжительность практики составляет 60-90 минут.
-                  </p>
-              </details>
-                <details>
-                  <summary class="questions__summary">Из чего состоит занятие?</summary>
-                  <p class="questions__text"><b>Как правило, каждое занятие включает:</b></br>
-                    <span>Суставную гимнастику, разминку</span></br>
-                    <span>Деликатную проработку позвоночника</span></br>
-                    <span>Дыхательные техники</span></br>
-                    <span>Основной блок асан и виньяс, направленный на включение всего тела</span></br>
-                    <span>Медитацию</span></br>
-                    <span>Релаксацию</span></br>
-                  </p>
-              </details>
-                  <details>
-                    <summary class="questions__summary">В чем преимущества индивидуальных занятий?</summary>
-                    <p class="questions__text">Индивидуальные занятия позволяют подобрать программу под запрос конкретного человека учитывая все его особенности, анамнез, сильные и слабые места. Также программа занятия может меняться по ситуации (с учетом женского цикла, перенесенных простуд, бытовых травм или просто чрезмерной усталости).</p>
-                  </details>
-                    <details>
-                      <summary class="questions__summary">Будет ли польза от занятий онлайн?</summary>
-                      <p class="questions__text">Да. Главное - это Ваше намерение и правильно подготовленное место (камера захватывает вас в полный рост и длину в горизонтальном положении тела).</n>
-                      Остальное сделают мои четкие, понятные инструкции и наглядный пример</p>
-                    </details>
-                      <details>
-                          <summary class="questions__summary">Важно</summary>
-                          <p class="questions__text">Занятия не носят лечебный характер.</n>
-                          При наличии хронических заболеваний рекомендуется предварительно проконсультироваться со своим лечащим врачом.</p>
-                      </details>
-          </div>
+            <!--Scroll up button-->
+            <a class="scroll-up" href="#">
+              <img class="scroll-up__img scroll-up__img_hover" src="/src/img/icons/scroll-top.png" alt="scroll up">
+            </a>
         </div>
           <div class="lotus">
             <img class="lotus__img" src="/src/img/icons/lotus.svg" alt="Logo lotus delimiter">
           </div>
       </section>
-        <!-- Certificates
-        ======================== --> 
-        <section class="certificates" aria-label="My certificates" id="certificates">
-          <div class="certificates__content">
-            <h2 class="certificates__title">Сертификаты</h2>
-            <!-- Dot --> 
-            <div class="dot">
-              <div class="dot__inner"></div>
-            </div>
-              <div class="gallery">
-                <div class="gallery__line">
-                  <img src="/src/img/certificates/cert-1.jpeg" alt="certificate">
-                  <img src="/src/img/certificates/cert-2.jpeg" alt="certificate">
-                  <img src="/src/img/certificates/cert-3.jpeg" alt="certificate">
-                  <img src="/src/img/certificates/cert-4.jpeg" alt="certificate">
-                  <img src="/src/img/certificates/cert-5.jpeg" alt="certificate">
-                  <img src="/src/img/certificates/cert-6.png" alt="certificate">
-                  <img src="/src/img/certificates/cert-7.jpeg" alt="certificate">
-                  <img src="/src/img/certificates/cert-8.jpeg" alt="certificate">
-                  <img src="/src/img/certificates/cert-9.jpeg" alt="certificate">
-                  <img src="/src/img/certificates/cert-10.jpeg" alt="certificate">
-                </div>
-                  <button class="gallery__btn-prev">
-                    <img class="gallery__btn-img gallery__btn-prev_hover" src="/src/img/icons/left.png" alt="button">
-                  </button>
-                    <button class="gallery__btn-next">
-                      <img class="gallery__btn-img gallery__btn-next_hover" src="/src/img/icons/right.png" alt="button">
-                    </button>
-              </div>
+
+    <!-- Cards
+    ======================== --> 
+      <section class="cards" aria-label="What gives you self-care yoga">
+        <div class="cards__content">
+          <div class="cards__item">
+            <figure>
+              <picture>
+                <source srcset="/src/img/leaf-parts-mobile/leaf-1-small.jpg" media="(max-width: 1000px)">
+                <img class="cards-img" src="/src/img/leaf-parts/leaf-1.jpg" alt="leaf">
+              </picture>
+                <figcaption class="figcaption figcaption-first">
+                    <p class="cards-text">Укрепляет иммунную систему.</p>
+                    <p class="cards-text">Корректирует осанку и оздоравливает позвоночник.</p>
+                </figcaption>
+            </figure>
           </div>
-            <div class="lotus">
-              <img class="lotus__img" src="/src/img/icons/lotus.svg" alt="Logo lotus delimiter">
-            </div>
-        </section>
 
+          <div class="cards__item">
+            <figure>
+              <picture>
+                <source srcset="/src/img/leaf-parts-mobile/leaf-2-small.jpg" media="(max-width: 1000px)">
+                <img class="cards-img" src="/src/img/leaf-parts/leaf-2.jpg" alt="leaf">
+              </picture>
+                <figcaption class="figcaption figcaption-second">
+                  <h3 class="cards-title">Что дает <span>&#171;Заботливая йога&#187;</span>?</h3>
+                  <p class="cards-text">Улучшает концентрацию внимания и координацию движений.</p>
+                </figcaption>
+            </figure>
+          </div>
 
+          <div class="cards__item">
+            <figure>
+              <picture>
+                <source srcset="/src/img/leaf-parts-mobile/leaf-3-small.jpg" media="(max-width: 1000px)">
+                <img class="cards-img" src="/src/img/leaf-parts/leaf-3.jpg" alt="leaf">
+              </picture>
+                <figcaption class="figcaption figcaption-third">
+                  <p class="cards-text">Увеличивает мобильность суставов и эластичность мышц.</p>
+                  <p class="cards-text">Нормализует работу нервной, эндокринной, дыхательной, сердечно-сосудистой и моче-половой систем.</p>
+                </figcaption>
+            </figure>
+          </div>
 
-        <!-- Testimonials
-        ======================== --> 
-        <section class="testimonials" aria-label="My testimonials" id="testimonials">
-          <div class="testimonials__content">
-            <h2 class="testimonials__title">Отзывы</h2>
-            <!-- Dot --> 
+          <div class="cards__item">
+            <figure>
+              <picture>
+                <source srcset="/src/img/leaf-parts-mobile/leaf-4-small.jpg" media="(max-width: 1000px)">
+                <img class="cards-img" src="/src/img/leaf-parts/leaf-4.jpg" alt="leaf">
+              </picture>
+                <figcaption class="figcaption figcaption-fourth">
+                  <p class="cards-text">Развивает физическую выносливость.</p>
+                  <p class="cards-text">Укрепляет опорно-двигательный аппарат.</p>
+                </figcaption>
+            </figure>
+          </div>
+
+          <div class="cards__item">
+            <figure>
+              <picture>
+                <source srcset="/src/img/leaf-parts-mobile/leaf-5-small.jpg" media="(max-width: 1000px)">
+                <img class="cards-img" src="/src/img/leaf-parts/leaf-5.jpg" alt="leaf">
+              </picture>
+                <figcaption class="figcaption figcaption-fifth">
+                  <p class="cards-text">Помогает снять физическое и ментальное напряжение.</p>
+                </figcaption>
+            </figure>
+          </div>
+
+          <div class="cards__item">
+            <figure>
+              <picture>
+                <source srcset="/src/img/leaf-parts-mobile/leaf-6-small.jpg" media="(max-width: 1000px)">
+                <img class="cards-img" src="/src/img/leaf-parts/leaf-6.jpg" alt="leaf">
+              </picture>
+                <figcaption class="figcaption figcaption-sixth">
+                  <p class="cards-text">Помогает восстановиться после родов.</p>
+                </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <div class="lotus">
+        <img class="lotus__img" src="/src/img/icons/lotus.svg" alt="Logo lotus delimiter">
+      </div>
+    </article>
+
+      <article class="coach" aria-label="
+      more info about the coach" id="coach">
+      <!-- About me
+      ======================== --> 
+        <section class="about" id="about" aria-label="What gives you self-care yoga">
+          <h2 class="about__title">Обо мне</h2>
+            <!-- Dot -->
             <div class="dot">
               <div class="dot__inner"></div>
             </div>
-              <div class="carousel">
-                <div class="carousel__container">
-                  <div class="carousel__line">
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-1.png" alt="testimonials"></div>
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-2.png" alt="testimonials"></div>
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-3.png" alt="testimonials"></div>
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-4.png" alt="testimonials"></div>
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-5.png" alt="testimonials"></div>
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-6.png" alt="testimonials"></div>
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-7.png" alt="testimonials"></div>
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-8_1.png" alt="testimonials"></div>
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-8_2.png" alt="testimonials"></div>
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-8_3.png" alt="testimonials"></div>
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-8_4.png" alt="testimonials"></div>
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-9.png" alt="testimonials"></div>
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-10.png" alt="testimonials"></div> 
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-11.png" alt="testimonials"></div>
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-12.png" alt="testimonials"></div>
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-13.png" alt="testimonials"></div>
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-14.png" alt="testimonials"></div>
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-15.png" alt="testimonials"></div>
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-16.png" alt="testimonials"></div>
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-17_1.png" alt="testimonials"></div>
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-17_2.png" alt="testimonials"></div>
-                    <div class="carousel__item"><img src="/src/img/testimonials/otzyv-18.png" alt="testimonials"></div>
-                    <!-- <img src="/src/img/testimonials/otzyv-19.png" alt="testimonials"> 
-                  -->
+              <div class="about__content">
+                <div class="about__card">
+                  <h3 class="about__text">Меня зовут Александра Пилипович и я искренне считаю, что с помощью йоги жизнь каждого человека сможет стать более качественной и наполненной.</h3>
+                  <h4 class="about__subtitle">Мои обучения</h4>
+                    <ul class="about__list">
+                      <li class="about__item">Yoga Alliance International. Преподаватель Хатха-Йоги <strong>YTTC-200</strong>. 2020 г.</li>
+                      <li class="about__item">Санкт-Петербургский Институт Восточных Методов Реабилитации. Упражнения йоги как метод адаптивной физкультуры. 2022 г.</li>
+                      <li class="about__item">Анатомия фитнеса. Пилатес. От анатомии к движению. 2023 г.</li>
+                      <li class="about__item">Центр Информационной реабилитации. Специалист энергоинформационных технологий. 2016 г.</li>
+                      <h4 class="about__subtitle">Дополнительно:</h4>
+                      <ul class="about__innerlist">
+                        <li class="about__subitem">Семинар &#171;Тейпирование&#187; (Анатомия Фитнеса. 2023 г.)</li>
+                        <li class="about__subitem">Семинар &#171;Ротаторная манжета плеча&#187; (Анатомия Фитнеса. 2022 г.)
+                        </li>
+                        <li class="about__subitem">Онлайн курс по теории и практики йоги (школа йоги &#171;Чатуранга&#187;. 2021 г.)</li>
+                        <li class="about__subitem">Семинар &#171;Соматический подход в телесно-ориентированной терапии: Школа Фельденкрайза. Соматическое обучение Томаса Ханны&#187; (БГПУ им. М.Танка. 2020 г.)</li>
+                      </ul>
+                    </ul>
+                </div>
+                  <div class="about__block">
+                    <picture class="about__wrapper">
+                      <source srcset="/src/img/mobile-images/coach-small.jpg" media="(max-width: 380px)">
+                      <source src="/src/img/responsive-images/coach-responsive.jpg" media="(max-width: 768px)">
+                      <img class="about__image" src="/src/img/coach/coach.jpg" alt="Coach">
+                    </picture>
                   </div>
-                </div>
-                  <button class="carousel__btn-prev">
-                    <img class="carousel__btn-img carousel__btn-prev_hover" src="/src/img/icons/left.png" alt="button">
-                  </button>
-                    <button class="carousel__btn-next">
-                      <img class="carousel__btn-img carousel__btn-next_hover" src="/src/img/icons/right.png" alt="button">
-                    </button>
               </div>
-          </div>
-            <div class="lotus">
-              <img class="lotus__img" src="/src/img/icons/lotus.svg" alt="Logo lotus delimiter">
-            </div>
+                <div class="lotus">
+                  <img class="lotus__img" src="/src/img/icons/lotus.svg" alt="Logo lotus delimiter">
+                </div>
         </section>
+      </article>
+      <div class="parallax"></div>
+      <!-- Second Article
+      ======================== --> 
+        <article class="details" aria-label="
+      info about the course" id="details">
+          <!-- Practices
+          ======================== --> 
+          <section class="practices" id="practices" aria-label="Trial video practices">
+            <div class="practices__content">
+              <h2 class="practices__title">Пробные практики</h2>
+              <!-- Dot --> 
+              <div class="dot">
+                <div class="dot__inner"></div>
+              </div>
+              <div class="practices__buttons">
+                <!-- Button -->
+                <div class="button-select">
+                  <a class="btn btn_hover btn_active" href="#practices" data-tag="yoga, therapy, pilates, gymnastics, breathing, relaxation">
+                    <span>Все</span>
+                  </a>
+                </div>
+                  <!-- Button -->
+                  <div class="button-select">
+                    <a class="btn btn_hover" href="#practices" data-tag="yoga, therapy, gymnastics, breathing, relaxation">
+                      <span>Йога</span>
+                    </a>
+                  </div>
+                    <!-- Button -->
+                    <div class="button-select">
+                      <a class="btn btn_hover" href="#practices" data-tag="therapy, gymnastics, breathing, relaxation">
+                        <span>Йогатерапия</span>
+                      </a>
+                    </div>
+                      <!-- Button -->
+                      <div class="button-select">
+                        <a class="btn btn_hover" href="#practices" data-tag="pilates, breathing">
+                          <span>Пилатес</span>
+                        </a>
+                      </div>
+                        <!-- Button -->
+                        <div class="button-select">
+                          <a class="btn btn_hover" href="#practices" data-tag="gymnastics, breathing">
+                            <span>Работа с дыханием</span>
+                          </a>
+                        </div>
+                          <!-- Button -->
+                          <div class="button-select">
+                            <a class="btn btn_hover" href="#practices" data-tag="relaxation">
+                              <span>Релаксация</span>
+                            </a>
+                          </div>
+              </div>
+              <div class="video">
+                <div class="video__card" data-type="yoga">
+                  <img class="video__img video__img_hover" src="/src/img/video/yoga.jpg">
+                  <img class="video__icon video__icon_hover" src="/src/img/icons/play.png" data-count="0">
+                </div>
+                <div class="video__card" data-type="therapy">
+                  <img class="video__img video__img_hover" src="/src/img/video/therapy.jpg">
+                  <img class="video__icon video__icon_hover" src="/src/img/icons/play.png" data-count="1">
+                </div>
+                <div class="video__card" data-type="pilates">
+                  <img class="video__img video__img_hover" src="/src/img/video/pilates.jpg">
+                  <img class="video__icon video__icon_hover" src="/src/img/icons/play.png" data-count="2">
+                </div>
+                <div class="video__card" data-type="gymnastics">
+                  <img class="video__img video__img_hover" src="/src/img/video/gymnastics.jpg">
+                  <img class="video__icon video__icon_hover" src="/src/img/icons/play.png" data-count="3">
+                </div>
+                <div class="video__card" data-type="breathing">
+                  <img class="video__img video__img_hover" src="/src/img/video/breathing.jpg">
+                  <img class="video__icon video__icon_hover" src="/src/img/icons/play.png" data-count="4">
+                </div>
+                <div class="video__card" data-type="relaxation">
+                  <img class="video__img video__img_hover" src="/src/img/video/relax.jpg">
+                  <img class="video__icon video__icon_hover" src="/src/img/icons/play.png" data-count="5">
+                </div>
+              </div>
+                <div class="video-player" id="videoPlayer">
+                  <iframe width="800" height="600" src="https://www.youtube.com/embed/1ldoWsIR9dQ?si=BP6rUpLNW3V_bhus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="myVideo"></iframe>
+                </div>
+            </div>
+              <div class="lotus">
+                <img class="lotus__img" src="/src/img/icons/lotus.svg" alt="Logo lotus delimiter">
+              </div>
+          </section>
+            <!-- Questions
+            ======================== --> 
+            <section class="questions" id="questions" aria-label="Frequently asked questions">
+              <div class="questions__content">
+                <h2 class="questions__title">Вопрос-ответ</h2>
+                <!-- Dot --> 
+                <div class="dot">
+                  <div class="dot__inner"></div>
+                </div>
+                  <div class="questions__list">
+                    <details>
+                        <summary class="questions__summary">Как проводятся занятия?</summary>
+                        <p class="questions__text">Индивидуальные занятия проводятся онлайн и выстраиваются исходя из физического и психологического состояния практикующего после личной беседы и заполнения анкеты.</n>
+                        Продолжительность практики составляет 60-90 минут.
+                        </p>
+                    </details>
+                      <details>
+                        <summary class="questions__summary">Из чего состоит занятие?</summary>
+                        <p class="questions__text"><b>Как правило, каждое занятие включает:</b></br>
+                          <span>Суставную гимнастику, разминку</span></br>
+                          <span>Деликатную проработку позвоночника</span></br>
+                          <span>Дыхательные техники</span></br>
+                          <span>Основной блок асан и виньяс, направленный на включение всего тела</span></br>
+                          <span>Медитацию</span></br>
+                          <span>Релаксацию</span></br>
+                        </p>
+                    </details>
+                        <details>
+                          <summary class="questions__summary">В чем преимущества индивидуальных занятий?</summary>
+                          <p class="questions__text">Индивидуальные занятия позволяют подобрать программу под запрос конкретного человека учитывая все его особенности, анамнез, сильные и слабые места. Также программа занятия может меняться по ситуации (с учетом женского цикла, перенесенных простуд, бытовых травм или просто чрезмерной усталости).</p>
+                        </details>
+                          <details>
+                            <summary class="questions__summary">Будет ли польза от занятий онлайн?</summary>
+                            <p class="questions__text">Да. Главное - это Ваше намерение и правильно подготовленное место (камера захватывает вас в полный рост и длину в горизонтальном положении тела).</n>
+                            Остальное сделают мои четкие, понятные инструкции и наглядный пример</p>
+                          </details>
+                            <details>
+                                <summary class="questions__summary">Важно</summary>
+                                <p class="questions__text">Занятия не носят лечебный характер.</n>
+                                При наличии хронических заболеваний рекомендуется предварительно проконсультироваться со своим лечащим врачом.</p>
+                            </details>
+                </div>
+              </div>
+                <div class="lotus">
+                  <img class="lotus__img" src="/src/img/icons/lotus.svg" alt="Logo lotus delimiter">
+                </div>
+            </section>
+              <!-- Certificates
+              ======================== --> 
+              <section class="certificates" id="certificates" aria-label="My certificates">
+                <div class="certificates__content">
+                  <h2 class="certificates__title">Сертификаты</h2>
+                  <!-- Dot --> 
+                  <div class="dot">
+                    <div class="dot__inner"></div>
+                  </div>
+                    <div class="gallery">
+                      <div class="gallery__line">
+                        <img src="/src/img/certificates/cert-1.jpeg" alt="certificate">
+                        <img src="/src/img/certificates/cert-2.jpeg" alt="certificate">
+                        <img src="/src/img/certificates/cert-3.jpeg" alt="certificate">
+                        <img src="/src/img/certificates/cert-4.jpeg" alt="certificate">
+                        <img src="/src/img/certificates/cert-5.jpeg" alt="certificate">
+                        <img src="/src/img/certificates/cert-6.png" alt="certificate">
+                        <img src="/src/img/certificates/cert-7.jpeg" alt="certificate">
+                        <img src="/src/img/certificates/cert-8.jpeg" alt="certificate">
+                        <img src="/src/img/certificates/cert-9.jpeg" alt="certificate">
+                        <img src="/src/img/certificates/cert-10.jpeg" alt="certificate">
+                      </div>
+                        <button class="gallery__btn-prev">
+                          <img class="gallery__btn-img gallery__btn-prev_hover" src="/src/img/icons/left.png" alt="button">
+                        </button>
+                          <button class="gallery__btn-next">
+                            <img class="gallery__btn-img gallery__btn-next_hover" src="/src/img/icons/right.png" alt="button">
+                          </button>
+                    </div>
+                </div>
+                  <div class="lotus">
+                    <img class="lotus__img" src="/src/img/icons/lotus.svg" alt="Logo lotus delimiter">
+                  </div>
+              </section>
+              <!-- Testimonials
+              ======================== --> 
+                <section class="testimonials" id="testimonials" aria-label="My testimonials">
+                  <div class="testimonials__content">
+                    <h2 class="testimonials__title">Отзывы</h2>
+                    <!-- Dot --> 
+                    <div class="dot">
+                      <div class="dot__inner"></div>
+                    </div>
+                      <div class="carousel">
+                        <div class="carousel__container">
+                          <div class="carousel__line">
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-1.png" alt="testimonials"></div>
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-2.png" alt="testimonials"></div>
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-3.png" alt="testimonials"></div>
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-4.png" alt="testimonials"></div>
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-5.png" alt="testimonials"></div>
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-6.png" alt="testimonials"></div>
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-7.png" alt="testimonials"></div>
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-8_1.png" alt="testimonials"></div>
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-8_2.png" alt="testimonials"></div>
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-8_3.png" alt="testimonials"></div>
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-8_4.png" alt="testimonials"></div>
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-9.png" alt="testimonials"></div>
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-10.png" alt="testimonials"></div> 
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-11.png" alt="testimonials"></div>
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-12.png" alt="testimonials"></div>
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-13.png" alt="testimonials"></div>
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-14.png" alt="testimonials"></div>
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-15.png" alt="testimonials"></div>
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-16.png" alt="testimonials"></div>
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-17_1.png" alt="testimonials"></div>
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-17_2.png" alt="testimonials"></div>
+                            <div class="carousel__item"><img src="/src/img/testimonials/otzyv-18.png" alt="testimonials"></div>
+                            <!-- <img src="/src/img/testimonials/otzyv-19.png" alt="testimonials"> 
+                          -->
+                          </div>
+                        </div>
+                          <button class="carousel__btn-prev">
+                            <img class="carousel__btn-img carousel__btn-prev_hover" src="/src/img/icons/left.png" alt="button">
+                          </button>
+                            <button class="carousel__btn-next">
+                              <img class="carousel__btn-img carousel__btn-next_hover" src="/src/img/icons/right.png" alt="button">
+                            </button>
+                      </div>
+                  </div>
+                    <div class="lotus">
+                      <img class="lotus__img" src="/src/img/icons/lotus.svg" alt="Logo lotus delimiter">
+                    </div>
+                </section>
+                <!-- Contacts
+                ======================== -->
+                  <section class="contacts" id="contacts" aria-label="My contacts">
+                    <div class="contacts__content">
+                      <h2 class="contacts__title">Контакты</h2>
+                      <!-- Dot -->
+                      <div class="dot">
+                        <div class="dot__inner"></div>
+                      </div>
+                    
+                    
+                      <div class="mail">
+                        <div class="mail__container">
+                          <div class="mail__social">
+                            <div class="mail__instagram">
+                              <a class="mail__link" href="https://www.instagram.com/yoga_pilipovich/" target="_blank">
+                                <img class="mail__img mail__img_hover" src="/src/img/icons/instagram-dark.svg" alt="instagram">
+                              </a>
+                              <p class="mail__text-one">yoga_pilipovich</p>
+                            </div>
+                              <div class="mail__telegram">
+                                <a class="mail__link" href="https://t.me/alexandra_pilipovich" target="_blank">
+                                  <img class="mail__img mail__img_hover" src="/src/img/icons/telegram-dark.svg" alt="telegram">
+                                </a>
+                                <p class="mail__text-one">@SelfCareYoga</p>
+                                <p class="mail__text-two">Погружение в теорию и практику</p>
+                              </div>
+                                <div class="mail__youtube">
+                                  <a class="mail__link" href="https://www.youtube.com/channel/UCtXdBlzzXd9cw4syzVOnTmg" target="_blank">
+                                    <img class="mail__img mail__img_hover" src="/src/img/icons/youtube-color.svg" alt="youtube">
+                                  </a>
+                                  <p class="mail__text-one">@yogapilipovich</p>
+                                  <p class="mail__text-two">Пробные практики</p>
+                                </div>
+                                  <div class="mail__email">
+                                    <a class="mail__link" href="mailto:pilipovichsasha@gmail.com" target="_blank">
+                                      <img class="mail__img mail__img_hover" src="/src/img/icons/email.png" alt="email">
+                                    </a>
+                                    <p class="mail__text-one">e-mail</p>
+                                    <p class="mail__text-two">pilipovichsasha@gmail.com</p>
+                                  </div>
+                          </div>
 
-  
- 
-    
-        
-
-    
 
 
 
 
 
 
+                          <div class="mail__form">
+                            <div class="topic-text">Отправьте мне сообщение</div>
+                          
+                            <form action="send_mail.php" name="form" method="POST">
+                              <div class="input-box">
+                                <input
+                                  type="text"
+                                  placeholder="Ваше имя"
+                                  name="name"
+                                  id="name"
+                                  data-reg="^[А-ЯЁ][а-яё]*$"
+                                />
+                                <label for="name">Только русские буквы</label>
+                              </div>
+                              <div class="input-box">
+                                <input
+                                  type="text"
+                                  placeholder="Введите email"
+                                  name="email"
+                                  id="email"
+                                  data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
+                                />
+                                <label for="email">В формате: your-name@email.com</label>
+                              </div>
+                              <div class="input-box">
+                                <input
+                                  type="text"
+                                  placeholder="Введите телефон"
+                                  name="phone"
+                                  id="phone"
+                                  data-reg="^((\+7|7|8)+([0-9]){10})$"
+                                />
+                                <label for="phone">В формате: +375(29)000-00-00</label>
+                              </div>
+                              <div class="input-box message-box">
+                                <textarea placeholder="Сообщение" name="message"></textarea>
+                              </div>
+                              <div class="button">
+                                <input type="submit" id="button" value="Отправить" />
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
 
 
-</article>
-  
+
+
+
+                    </div>
 
 
 
 
 
-<!-- <section> -->
-<!-- 
-  <div class="course__card">
-    <h2 class="course__title">Вы слышали о <span>&#171;Заботливой йоге&#187;</span>?</h2>
-      <p>Интересно, все слышали про йогу Айенгара, Виньяса, Флоу, Аштанга, Кундалини и многие другие виды. А про <span>&#171;Заботливую&#187;</span> ни разу!</p>
-      <p>Да, в официальных классификациях вы не найдете такое направление. И описать его в двух словах достаточно сложно. Но если коротко, <b>«Заботливая йога»</b> — это мягкий и деликатный стиль, который включает в себя элементы различных направлений. В первую очередь — это Вини-йога, Йогатерапия и соматический подход. А также йога-вьяяма, флоу-йога, йога Айенгара, инь-йога.</p>
-      <h3 class="course__subtitle">Почему именно такое смешение стилей?</h3>
-      <p>Во-первых, потому что каждый человек уникален. И для каждого нужно находить подход и практику, подходящую именно под его нужды. Ограничиваясь одним стилем , порой это бывает сложно сделать. Особенно, в самом начале пути.</p>
-      <p>Во-вторых, на данный момент для себя я не нашла того единого направления, которое бы отвечало всем моим требованиям и полностью подходило для моих личных нужд.</p>
-      <p>В-третьих, исходя из личного опыта я вижу, что большая часть направлений йоги будут довольно жесткими и травмоопасными для человека, который последние годы вел малоподвижный образ жизни. И даже самые базовые варианты исполнения асан могут оказаться крайне сложными или же нанести вред практикующему со временем. Поэтому для мягкого и аккуратного старта практики можно использовать именно адаптивную йогу с элементами йогатерапии. А уже затем практикующий может двигаться дальше, углубляя свои навыки.</p>
-      <p>В-четвертых, я искренне считаю, что для многих людей такая нагрузка (и даже перегрузка) просто не нужна. А для обретения гармонии тела, ума и духа можно использовать более мягкий и бережный подход. Ведь порой важно практиковать не как можно сложнее, а регулярно! И для того, чтоб практика была регулярной (опять же, особенно важно это в начале вашей практики) занятия должны вызывать положительные ассоциации в уме и благоприятно сказываться на теле. Но никак не давать ощущение слабости и неуверенности в собственных силах.</p>
-  </div>
-  <div class="course__card">
-    <h2 class="course__title">Вы слышали о <span>&#171;Заботливой йоге&#187;</span>?</h2>
-      <p>Интересно, все слышали про йогу Айенгара, Виньяса, Флоу, Аштанга, Кундалини и многие другие виды. А про <span>&#171;Заботливую&#187;</span> ни разу!</p>
-      <p>Да, в официальных классификациях вы не найдете такое направление. И описать его в двух словах достаточно сложно. Но если коротко, <b>«Заботливая йога»</b> — это мягкий и деликатный стиль, который включает в себя элементы различных направлений. В первую очередь — это Вини-йога, Йогатерапия и соматический подход. А также йога-вьяяма, флоу-йога, йога Айенгара, инь-йога.</p>
-      <h3 class="course__subtitle">Почему именно такое смешение стилей?</h3>
-      <p>Во-первых, потому что каждый человек уникален. И для каждого нужно находить подход и практику, подходящую именно под его нужды. Ограничиваясь одним стилем , порой это бывает сложно сделать. Особенно, в самом начале пути.</p>
-      <p>Во-вторых, на данный момент для себя я не нашла того единого направления, которое бы отвечало всем моим требованиям и полностью подходило для моих личных нужд.</p>
-      <p>В-третьих, исходя из личного опыта я вижу, что большая часть направлений йоги будут довольно жесткими и травмоопасными для человека, который последние годы вел малоподвижный образ жизни. И даже самые базовые варианты исполнения асан могут оказаться крайне сложными или же нанести вред практикующему со временем. Поэтому для мягкого и аккуратного старта практики можно использовать именно адаптивную йогу с элементами йогатерапии. А уже затем практикующий может двигаться дальше, углубляя свои навыки.</p>
-      <p>В-четвертых, я искренне считаю, что для многих людей такая нагрузка (и даже перегрузка) просто не нужна. А для обретения гармонии тела, ума и духа можно использовать более мягкий и бережный подход. Ведь порой важно практиковать не как можно сложнее, а регулярно! И для того, чтоб практика была регулярной (опять же, особенно важно это в начале вашей практики) занятия должны вызывать положительные ассоциации в уме и благоприятно сказываться на теле. Но никак не давать ощущение слабости и неуверенности в собственных силах.</p>
-  </div>
-</section> -->
-  
 
 
 
+                  </section>
 
+        </article>
   </main>
   <!-- <footer class="footer">
     <div class="footer__content container"> 

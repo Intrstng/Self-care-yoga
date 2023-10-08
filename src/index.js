@@ -1,7 +1,7 @@
 // import './sass/styles.scss';
 import 'normalize.css';
 import { showSlide, nextSlide, prevSlide, sliderBtnNext, sliderBtnPrev } from './js/Slider';
-import  { prevCard, nextCard, showPrev, showNext  } from './js/Cards';
+import  { cardPrevBtn, cardNextBtn, showPrev, showNext  } from './js/Cards';
 import { scrollUp, trackScroll, scrollTop } from './js/ScrollTop';
 import { playVideoBtns, playVideo, stopVideo } from './js/VideoPlayer';
 import { galleryBtns, selectVideoByTag } from './js/VideoGallery';
@@ -21,8 +21,8 @@ window.addEventListener('scroll', trackScroll);
 scrollUp.addEventListener('click', scrollTop);
 
 // Cards slider
-prevCard.addEventListener('click',showPrev);
-nextCard.addEventListener('click',showNext);
+cardPrevBtn.addEventListener('click',showPrev);
+cardNextBtn.addEventListener('click',showNext);
 
 // Video player
 playVideoBtns.forEach(item => item.addEventListener('click', (e) => playVideo(e)));
