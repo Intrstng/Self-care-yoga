@@ -6,6 +6,9 @@ import { scrollUp, trackScroll, scrollTop } from './js/ScrollTop';
 import { playVideoBtns, playVideo, stopVideo } from './js/VideoPlayer';
 import { galleryBtns, selectVideoByTag } from './js/VideoGallery';
 import { details, toggleAccordionItems, closeAccordionByClickOutside } from './js/Accordion';
+import { watchEntry } from './js/ElementAnimation';
+
+
 
 // Welcome section slider
 sliderBtnNext.addEventListener('click', nextSlide);
@@ -33,6 +36,11 @@ galleryBtns.forEach(item => {
 // Accordion
 details.forEach(item => item.addEventListener('toggle', toggleAccordionItems));
 document.body.addEventListener('click',  closeAccordionByClickOutside);
+
+// Start element animation observer
+window.addEventListener('load', watchEntry);
+
+
 
 
 

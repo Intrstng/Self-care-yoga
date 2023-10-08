@@ -45,6 +45,7 @@
   &__text {
     font-size: 1.6rem;
     margin-bottom: 2.5rem;
+    letter-spacing: 0.05rem;
   }
   &__list,
   &__innerlist {
@@ -89,6 +90,7 @@
     @extend %font-decoration;
     font-weight: bold;
     color: $color-span;
+    letter-spacing: 0.07rem;
   }
   &__list {
 

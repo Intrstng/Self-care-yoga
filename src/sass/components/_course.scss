@@ -32,6 +32,16 @@
     @extend %font-decoration;
     font-size: 3rem;
     color: $color-dark-bg;
+
+
+
+
+
+
+
+
+
+
     span {
       color: $color-span;
       letter-spacing: 0.07rem;
@@ -61,8 +71,33 @@
   }
 }
 
-.test {
-  width: 100vw;
-  height: 300px;
-  background-color: #FFF;
+// .test {
+//   width: 100vw;
+//   height: 300px;
+//   background-color: #FFF;
+// }
+
+
+
+
+
+
+.title-animation {
+  opacity: 0;
+  transform: translateX(-40rem);
+  &_show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+  }
+}
+
+.text-animation {
+  opacity: 0;
+  transform: translateX(-40rem);
+  &_show {
+    opacity: 1;
+    transition: all 2s;
+    transform: translateY(0%);
+  }
 }
