@@ -68,34 +68,24 @@
     letter-spacing: 0.08rem;
     font-size: 2.3rem;
   }
-  &__btn-prev {
+  &__btn-prev,
+  &__btn-next {
     position: absolute;
-    @include top-left(50%, 1%);
     transform: translateY(-50%);
     background-color: transparent;
     border: none;
     transition: all 0.25s ease;
+    &_hover:hover {
+      opacity: 0.8;
+      transform: scale(1.05);
+      cursor: pointer;
+    }
   }
   &__btn-prev {
-    &_hover:hover {
-      opacity: 0.8;
-      transform: scale(1.05);
-      cursor: pointer;
-    }
+    @include top-left(50%, 1%);
   }
   &__btn-next {
-    &_hover:hover {
-      opacity: 0.8;
-      transform: scale(1.05);
-      cursor: pointer;
-    }
-  }
-  &__btn-next {
-    position: absolute;
     @include top-right(50%, 2%);
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
   }
   &__wrapper {
     width: 8rem;

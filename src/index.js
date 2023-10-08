@@ -7,13 +7,13 @@ import { playVideoBtns, playVideo, stopVideo } from './js/VideoPlayer';
 import { galleryBtns, selectVideoByTag } from './js/VideoGallery';
 import { details, toggleAccordionItems, closeAccordionByClickOutside } from './js/Accordion';
 import { watchEntry } from './js/ElementAnimation';
-
-
+import { showGallery, showPrevGalleryImg, showNextGalleryImg } from './js/Certificates'; 
+import { carouselBtnPrev, carouselBtnNext, scrollCarouselPrev, scrollCarouselNext, setCarouselItemWidth, checkBtns } from './js/Testimonials';
 
 // Welcome section slider
 sliderBtnNext.addEventListener('click', nextSlide);
 sliderBtnPrev.addEventListener('click', prevSlide);
-
+window.addEventListener('load', showSlide);
 window.addEventListener('resize', showSlide);
 
 // Scroll up button
@@ -40,10 +40,18 @@ document.body.addEventListener('click',  closeAccordionByClickOutside);
 // Start element animation observer
 window.addEventListener('load', watchEntry);
 
+// Certificates section slider
+window.addEventListener('load', showGallery);
+window.addEventListener('resize', showGallery);
 
+document.querySelector('.gallery__btn-next').addEventListener('click', showNextGalleryImg);
+document.querySelector('.gallery__btn-prev').addEventListener('click',showPrevGalleryImg);
 
-
-
+// Testimonials section slider
+carouselBtnPrev.addEventListener('click',scrollCarouselPrev);
+carouselBtnNext.addEventListener('click', scrollCarouselNext);
+window.addEventListener('load', setCarouselItemWidth);
+window.addEventListener('load', checkBtns);
 
 
 

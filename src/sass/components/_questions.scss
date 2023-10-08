@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 0;
   &__content {
-    max-width: $desktop-width;
+    width: $desktop-width;
     margin: 0 auto;
     padding: 4.5rem 0 4.5rem;
   }
@@ -102,7 +102,3 @@
     opacity: 1;
   }
 }
-
-
-
-
