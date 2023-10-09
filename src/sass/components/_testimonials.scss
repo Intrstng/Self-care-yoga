@@ -22,25 +22,27 @@
       overflow: hidden;
       background-color: transparent;
       transition: all 0.5s ease;
+      height: 53.5rem;
     }
     &__line {
       @include flex(flex, space-between, flex-start);
       background-color: $color-light-bg;
+      transition: all ease 1s;
     }  
     &__item {
-      height: calc(($carousel-width / 3) / 0.7);
+      height: calc(($carousel-width / 3) / 0.56);
       img {
         width: 100%;
         height: 100%;
       }
       &:nth-child(3n+1) {
-        border: 2px solid $color-pagination-light;
+        //border: 2px solid $color-pagination-light;
       }
       &:nth-child(3n+2) {
-        border: 2px solid $color-btn-hover;
+        //border: 2px solid $color-btn-hover;
       }
       &:nth-child(3n+3) {
-        border: 2px solid $color-dot;
+        //border: 2px solid $color-dot;
       }
     }
     &__btn-prev,

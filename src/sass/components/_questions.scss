@@ -34,7 +34,7 @@
         content: '';
         display: block;
         background-image: url('/src/img/icons/flower.png');
-        background-repeat: none;
+        background-repeat: no-repeat;
         background-position: center;
         background-size: contain; 
         @include width-height(1.7rem);
@@ -76,7 +76,7 @@
         content: '';
         display: block;
         background-image: url('/src/img/icons/question.png');
-        background-repeat: none;
+        background-repeat: no-repeat;
         background-position: center;
         background-size: contain; 
         @include width-height(2.4rem);

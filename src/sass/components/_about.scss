@@ -61,7 +61,7 @@
       display: block;
       margin: 0.2rem 0.6rem 0 0;
       background-image: url('/src/img/icons/certificate.png');
-      background-repeat: none;
+      background-repeat: no-repeat;
       background-position: center;
       background-size: contain; 
       @include width-height(1.7rem);
@@ -76,7 +76,7 @@
       display: block;
       margin: 0.4rem 0.6rem 0 0;
       background-image: url('/src/img/icons/diploma.png');
-      background-repeat: none;
+      background-repeat: no-repeat;
       background-position: center;
       background-size: contain; 
       @include width-height(1.8rem);

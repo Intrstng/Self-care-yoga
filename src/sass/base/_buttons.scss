@@ -82,6 +82,7 @@
   bottom: 6%;
   cursor: pointer;
   display: none;
+  z-index: 1;
   @include width-height(5rem);
   &_show {
     display: block;

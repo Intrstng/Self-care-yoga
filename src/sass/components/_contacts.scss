@@ -49,6 +49,7 @@
   height: 100%;
   position: relative;
   @include flex(flex, flex-start, center);
+  text-align: center;
   flex-direction: column;
   gap: 2rem;
 }
