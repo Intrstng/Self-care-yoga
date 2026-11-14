@@ -5,7 +5,7 @@ const videoPlayer = document.getElementById('videoPlayer'),
 // Поменять в ссылке Youtube "watch?v=" на "embed/" + в конец "&autoplay=1"
 const videoLinksArr = [
   "https://www.youtube.com/embed/DlEBmURH-JE?start=1&autoplay=1",
-  "https://www.youtube.com/embed/DlEBmURH-JE?autoplay=1",
+  "https://www.youtube.com/embed/xMOFBbSfEq8?start=27s&autoplay=1",
   "https://www.youtube.com/embed/xO0YLdWmM8U?autoplay=1",
   "https://www.youtube.com/embed/tUBx6AimjAA?autoplay=1",
   "https://www.youtube.com/embed/R02YVaxOYQo?start=67&autoplay=1",
