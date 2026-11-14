@@ -157,8 +157,8 @@
      width: calc(20px + (50 - 20) * ((100vw - 320px) / (850 - 320)));
     }
     &__dot {
-      width: calc(10px +(16 - 20) * ((100vw - 320px) / (850 -320)));
-      height: calc(10px +(16 - 20) * ((100vw - 320px) / (850 -320)));
+      width: calc(10px + (16 - 20) * ((100vw - 320px) / (850 - 320)));
+      height: calc(10px + (16 - 20) * ((100vw - 320px) / (850 - 320)));
     }
     &__wrapper {
       column-gap: calc(5px + (10 - 5) * ((100vw - 320px) / (850 - 320)));
