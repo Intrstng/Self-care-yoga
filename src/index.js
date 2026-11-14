@@ -9,6 +9,7 @@ import { details, toggleAccordionItems, closeAccordionByClickOutside } from './j
 import { watchEntry } from './js/ElementAnimation';
 import { showGallery, showPrevGalleryImg, showNextGalleryImg } from './js/Certificates'; 
 import { carouselBtnPrev, carouselBtnNext, scrollCarouselPrev, scrollCarouselNext, setCarouselItemWidth, checkBtns } from './js/Testimonials';
+import { sendForm } from './js/Form';
 
 // Welcome section slider
 sliderBtnNext.addEventListener('click', nextSlide);
@@ -53,15 +54,8 @@ carouselBtnNext.addEventListener('click', scrollCarouselNext);
 window.addEventListener('load', setCarouselItemWidth);
 window.addEventListener('load', checkBtns);
 
-
-
-
-
-
-
-
-
-
+// SMTP via EmailJS
+sendForm();
 
 // setInterval(() => {
 //   nextSlide()

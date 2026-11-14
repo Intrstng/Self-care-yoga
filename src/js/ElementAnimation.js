@@ -1,6 +1,6 @@
 export function watchEntry() {
   const options = {
-    threshold: [0.5]
+    threshold: [0.1]
   };
   const observer = new IntersectionObserver(onEntry, options),
       titleElements = document.querySelectorAll('.title-animation'),

@@ -30,6 +30,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "@emailjs/browser": "^5.0.3",
     "css-loader": "^6.8.1",
     "normalize.css": "^8.0.1",
     "style-loader": "^3.3.3"
